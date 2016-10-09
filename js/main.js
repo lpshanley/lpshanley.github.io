@@ -16,9 +16,6 @@ $.ajax({
 	$.each(result,function(key,repo){
 		
 		addCard( repo );
-		
-		console.log( `Name: ${repo.name}` );
-		console.log( `Sha: ${ repo.commit.sha.substring(0,7) }` );
 
 	});
 
