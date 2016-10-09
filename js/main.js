@@ -3,18 +3,14 @@ $( document ).ready(function(){
 	$.ajax({
 		url: 'https://api.github.com/repos/lpshanley/mnsure-script-engine/branches',
 		async: false
-	}).success(function( data ){
-		
-		console.log( data );
-		
-		/*
-		$.each(data,function(k,v){
+	}).success(function( result ){
+
+		$.each(result,function(key,repo){
 			
-			console.log( `Name: ${data.name}` );
+			console.log( `Name: ${repo.name}` );
 			console.log( `Sha: ${ data.commit.sha.substring((data.commit.sha.length - 7), data.commit.sha.length) }` );
 			
 		});
-		*/
 		
 	});
 	
