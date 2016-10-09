@@ -1,25 +1,25 @@
-$( document ).ready(function(){
+var addCard = function( data ){
 	
-	var addCard = function( data ){
-		
-		var div = $( '<div>',{ 'class':'card' });
-		
-		$( 'body' ).append( div );
-		
-	}
+	var htmlString = `Repo: ${ data.name }<br/>Sha: ${ data.commit.sha.substring(0,7) }`;
 	
-	$.ajax({
-		url: 'https://api.github.com/repos/lpshanley/mnsure-script-engine/branches',
-		async: true
-	}).success(function( result ){
+	var div = $( '<div>',{ 'class':'card', 'html':htmlString});
 
-		$.each(result,function(key,repo){
-			
-			console.log( `Name: ${repo.name}` );
-			console.log( `Sha: ${ repo.commit.sha.substring(0,7) }` );
-			
-		});
+	$( 'body' ).append( div );
+
+}
+
+$.ajax({
+	url: 'https://api.github.com/repos/lpshanley/mnsure-script-engine/branches',
+	async: true
+}).success(function( result ){
+
+	$.each(result,function(key,repo){
 		
+		addCard( repo );
+		
+		console.log( `Name: ${repo.name}` );
+		console.log( `Sha: ${ repo.commit.sha.substring(0,7) }` );
+
 	});
-	
+
 });
