@@ -8,7 +8,7 @@ $( document ).ready(function(){
 		$.each(result,function(key,repo){
 			
 			console.log( `Name: ${repo.name}` );
-			console.log( `Sha: ${ repo.commit.sha }` );
+			console.log( `Sha: ${ repo.commit.sha.substring(0,7) }` );
 			
 		});
 		
