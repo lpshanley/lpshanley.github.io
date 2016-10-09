@@ -2,7 +2,7 @@ $( document ).ready(function(){
 	
 	$.ajax({
 		url: 'https://api.github.com/repos/lpshanley/mnsure-script-engine/branches',
-		async: false
+		async: true
 	}).success(function( result ){
 
 		$.each(result,function(key,repo){
