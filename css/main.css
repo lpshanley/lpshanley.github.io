@@ -1,6 +1,25 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	font-size: 1.1em;
 	background-color: rgba(0,0,0,.01);
+}
+
+#profile {
+	background-color: #fff;
+	height: 100vh;
+	width: 25%;
+	min-height: 100px;
+	float: left;
+	position: fixed;
+}
+
+#output {
+	float: right;
+	width: 75%;
 }
 
 .card {

@@ -4,7 +4,7 @@ var addCard = function( data ){
 	
 	var div = $( '<div>',{ 'class':'card', 'html':htmlString});
 
-	$( 'body' ).append( div );
+	$( '#output' ).append( div );
 
 }
 
@@ -15,7 +15,7 @@ $.ajax({
 
 	$.each(result,function(key,repo){
 		
-		//addCard( repo );
+		addCard( repo );
 
 	});
 
