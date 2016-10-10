@@ -18,6 +18,8 @@ var populateProfile = function( profile ){
 	
 	var profileImage = $('<img>',{ 'src':profile.avatar_url, 'alt':'GitHub Profile Image' });
 	
+	$('#profile-image-wrapper').append( profileImage );
+	
 }
 
 $.ajax({
