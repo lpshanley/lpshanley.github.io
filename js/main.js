@@ -1,11 +1,19 @@
 var addCard = function( data ){
 	
-	var htmlString = `Repo: ${ data.name }<br/>Sha: ${ data.commit.sha.substring(0,7) }`;
+	var sha = data.commit.sha.substring(0,7);
+	
+	var htmlString = `Repo: ${ data.name }<br/>Sha: ${ sha }`;
 	
 	var div = $( '<div>',{ 'class':'card', 'html':htmlString});
 
 	$( '#main' ).append( div );
 
+}
+
+var populateProfile = function( data ){
+	
+	console.log( data );
+	
 }
 
 $.ajax({
@@ -18,4 +26,13 @@ $.ajax({
 		addCard( repo );
 
 	});
+});
+
+$.ajax({
+	url: 'https://api.github.com/users/lpshanley',
+	async: true
+}).success(function( result ){
+
+	populateProfile( result );
+	
 });
