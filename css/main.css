@@ -1,3 +1,5 @@
+/* Universal styles */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -8,6 +10,8 @@ body {
 	background-color: rgba(0,0,0,.01);
 }
 
+/* Profile Layout */
+
 #profile {
 	background-color: #fff;
 	height: 100vh;
@@ -15,15 +19,34 @@ body {
 	min-height: 100px;
 	float: left;
 	position: fixed;
-	    box-shadow: 1px 0px 8px 0px rgba(0,0,0,.35);
+	box-shadow: 1px 0px 8px 0px rgba(0,0,0,.35);
 }
+
+#profile > div {
+	margin-top: 20px 0;
+}
+
+#profile #profile-name {
+	font-size: 2em;
+	text-align: center;
+}
+
+#profile #profile-image-wrapper {
+	
+}
+
+#profile #profile-image-wrapper img {
+	margin: 0 auto;
+}
+
+/* Data Output Layout */
 
 #output {
 	float: right;
 	width: 75%;
 }
 
-.card {
+#output .card {
 	background-color: #fff;
 	box-shadow: 1px 1px 8px 0px rgba(0,0,0,.35);
 	width: 600px;
