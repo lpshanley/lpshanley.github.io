@@ -15,7 +15,7 @@ $.ajax({
 
 	$.each(result,function(key,repo){
 		
-		addCard( repo );
+		//addCard( repo );
 
 	});
 
