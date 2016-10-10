@@ -10,9 +10,13 @@ var addCard = function( data ){
 
 }
 
-var populateProfile = function( data ){
+var populateProfile = function( profile ){
 	
-	console.log( data );
+	console.log( profile );
+	
+	$('#profile-name').text( profile.name );
+	
+	var profileImage = $('<img>',{ 'src':profile.avatar_url, 'alt':'GitHub Profile Image' });
 	
 }
 
