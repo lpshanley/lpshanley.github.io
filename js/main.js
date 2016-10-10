@@ -6,7 +6,7 @@ var addCard = function( data ){
 	
 	var div = $( '<div>',{ 'class':'card', 'html':htmlString});
 
-	$( '#main' ).append( div );
+	$( '#main div.content-wrapper' ).append( div );
 
 }
 

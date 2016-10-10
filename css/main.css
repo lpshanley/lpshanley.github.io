@@ -11,6 +11,10 @@ body {
 	font-size: 13px;
 }
 
+.content-wrapper {
+	padding: 20px;
+}
+
 /* Profile Layout */
 
 #profile {
@@ -22,7 +26,7 @@ body {
 	width: 20%;
 }
 
-#profile > div {
+#profile div {
 	margin-top: 20px;
 }
 
