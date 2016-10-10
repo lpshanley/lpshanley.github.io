@@ -4,7 +4,7 @@ var addCard = function( data ){
 	
 	var div = $( '<div>',{ 'class':'card', 'html':htmlString});
 
-	$( '#mai' ).append( div );
+	$( '#main' ).append( div );
 
 }
 
