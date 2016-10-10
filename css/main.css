@@ -30,6 +30,7 @@ body {
 #profile #profile-name {
 	font-size: 2em;
 	text-align: center;
+	font-size: 20px;
 }
 
 #profile #profile-image-wrapper {
@@ -53,4 +54,5 @@ body {
 	width: 600px;
 	margin: 20px auto;
 	padding: 15px;
+	font-size: 14px;
 }
