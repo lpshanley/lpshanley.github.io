@@ -22,9 +22,7 @@ var populateProfile = function( profile ){
 	
 	$.each( $( '#profile .profile-data div[data-value]' ), function( key, value ){
 		
-		console.log( value );
-		
-		console.log( $( value ).attr('data-value') );
+		$( value ).text( profile[$( value ).attr('data-value')] );
 		
 	});
 	
