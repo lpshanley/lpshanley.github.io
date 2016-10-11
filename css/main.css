@@ -11,19 +11,13 @@ body {
 	font-size: 13px;
 }
 
-.content-wrapper {
-	padding: 10px;
-}
-
 /* Profile Layout */
 
 #profile {
 	background-color: #fff;
 	height: 100vh;
-	min-height: 100px;
 	position: fixed;
 	box-shadow: 1px 0px 2px rgba(0,0,0,.15);
-	width: 20%;
 }
 
 #profile .content-wrapper div {
@@ -62,24 +56,11 @@ body {
 
 /* Data Output Layout */
 
-#main {
-	float: left;
-	width: 60%;
-	margin-left: 20%;
-}
-
 #main .card {
 	background-color: #fff;
 	box-shadow: 0px 1px 2px rgba(0,0,0,.15);
-	width: 600px;
-	margin: 20px auto;
 	padding: 15px;
 	font-size: 14px;
 }
 
 /* Right Panel Layout */
-
-#right {
-	float: right;
-	width: 20%;
-}
