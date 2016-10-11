@@ -20,6 +20,12 @@ var populateProfile = function( profile ){
 	
 	$('#profile-image-wrapper').append( profileImage );
 	
+	$.each( $( '#profile .profile-data div' ), function( key, value ){
+		
+		console.log( value );
+		
+	});
+	
 }
 
 $.ajax({
