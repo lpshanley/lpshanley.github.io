@@ -26,13 +26,32 @@ body {
 	width: 20%;
 }
 
+#profile .content-wrapper div {
+	margin: 10px 0;
+}
+
 #profile #profile-name {
 	text-align: center;
 	font-size: 30px;
 }
 
-#profile #profile-image-wrapper {
-	
+#profile .profile-data {
+	border-top: 1px solid #e2e2e2;
+}
+
+#profile .profile-data .profile-data-label,
+#profile .profile-data .profile-data-value {
+	margin: 10px 0;
+}
+
+#profile .profile-data .profile-data-label {
+	width: 35%;
+	float: left;
+}
+
+#profile .profile-data .profile-data-value {
+	width: 65%;
+	float: right;
 }
 
 #profile #profile-image-wrapper img {
