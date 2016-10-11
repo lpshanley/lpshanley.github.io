@@ -28,7 +28,7 @@ var populateProfile = function( profile ){
 			case "created_at":
 				var apiDate = profile[$( value ).attr('data-value')]
 				var date = apiDate.split("T")[0].split('-');
-				fillVal = `${date[1]}-${date[0]}-${date[0]}`
+				fillVal = `${date[1]}-${date[2]}-${date[0]}`
 				break;
 			default:
 				fillVal = profile[$( value ).attr('data-value')];
