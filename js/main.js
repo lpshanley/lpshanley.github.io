@@ -24,6 +24,8 @@ var populateProfile = function( profile ){
 		
 		console.log( value );
 		
+		console.log( $(value).hasAttr('data-label') );
+		
 	});
 	
 }
