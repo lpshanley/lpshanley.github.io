@@ -20,7 +20,7 @@ var populateProfile = function( profile ){
 	
 	$('#profile-image-wrapper').append( profileImage );
 	
-	$.each( $( '#profile .profile-data div[data-value]' ), function( key, value ){
+	$.each( $( '#profile [data-value]' ), function( key, value ){
 		
 		var fillVal = "";
 		
