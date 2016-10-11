@@ -22,7 +22,21 @@ var populateProfile = function( profile ){
 	
 	$.each( $( '#profile .profile-data div[data-value]' ), function( key, value ){
 		
-		$( value ).text( profile[$( value ).attr('data-value')] );
+		var fillVal = "";
+		
+		switch( $( value ).attr('data-value') ){
+			case "created_at":
+				var apiDate = profile[$( value ).attr('data-value')]
+				var date = apiDate.split("T")[0].split('-');
+				fillVal = `${date[1]}-${date[0]}-${date[0]}`
+				break;
+			default:
+				fillVal = profile[$( value ).attr('data-value')];
+				break;
+			
+		}
+		
+		$( value ).text( fillVal );
 		
 	});
 	
