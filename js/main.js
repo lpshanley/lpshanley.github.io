@@ -20,11 +20,11 @@ var populateProfile = function( profile ){
 	
 	$('#profile-image-wrapper').append( profileImage );
 	
-	$.each( $( '#profile .profile-data div' ), function( key, value ){
+	$.each( $( '#profile .profile-data div[data-value]' ), function( key, value ){
 		
 		console.log( value );
 		
-		console.log( $(value).hasAttr('data-label') );
+		console.log( $( value ).attr('data-value') );
 		
 	});
 	
