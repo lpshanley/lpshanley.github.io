@@ -14,10 +14,6 @@ body {
 	box-shadow: 1px 0px 2px rgba(0,0,0,.15);
 }
 
-#profile div {
-	margin: 10px 0;
-}
-
 #profile #profile-name {
 	text-align: center;
 	font-size: 30px;
