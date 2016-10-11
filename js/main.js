@@ -4,7 +4,7 @@ var addCard = function( data ){
 	
 	var htmlString = `Repo: ${ data.name }<br/>Sha: ${ sha }`;
 	
-	var div = $( '<div>',{ 'class':'card', 'html':htmlString});
+	var div = $( '<div>',{ 'class':'card  col-lg-8 push-lg-2 col-md-10 offset-md-1', 'html':htmlString});
 
 	$( '#main' ).append( div );
 
